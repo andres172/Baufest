@@ -1,0 +1,137 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 21,
+        "name": "Update Pet Information",
+        "description": "",
+        "id": "login;update-pet-information;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11842831400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User add a new pet with dogi and 9655 and available",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dogi",
+                  "offset": 24
+                },
+                {
+                  "val": "9655",
+                  "offset": 33
+                },
+                {
+                  "val": "available",
+                  "offset": 42
+                }
+              ],
+              "location": "PetServicesStep.userAddNewPet(String,int,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1264477700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User updates pets information catman and sold and 9655",
+            "match": {
+              "arguments": [
+                {
+                  "val": "catman",
+                  "offset": 30
+                },
+                {
+                  "val": "sold",
+                  "offset": 41
+                },
+                {
+                  "val": "9655",
+                  "offset": 50
+                }
+              ],
+              "location": "PetServicesStep.UpdatePetInformation(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              3,
+              4
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3134781000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User gets a existent pet by id 9655",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9655",
+                  "offset": 31
+                }
+              ],
+              "location": "PetServicesStep.getExistentPet(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21850834500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verify pets detail has the catman and sold as expected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "catman",
+                  "offset": 32
+                },
+                {
+                  "val": "sold",
+                  "offset": 43
+                }
+              ],
+              "location": "PetServicesStep.UserVerifyPetsDetailIsAsExpected(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@UpdatePet"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "PetServices.feature"
+  }
+]
